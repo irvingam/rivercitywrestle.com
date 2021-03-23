@@ -4,3 +4,44 @@
     box-sizing: border-box;
     margin: 0;
 }
+
+/* Custom Properties */
+
+:root {
+
+    --ff-primary: 'Ubuntu', sans-serif;
+
+    --fw-bold: 700;
+    --fw-normal: 300;
+
+    --fs-title: 50px;
+    --fs-subtitle: 38px;
+    --fs-para: 18px;
+
+    --clr-light: rgba(225, 225, 225);
+    --clr-dark: rgba(0, 0, 0);
+    --clr-one: rgba(40, 40, 40);
+    --clr-two: rgba(47, 194, 82);
+}
+
+/* General Styles */
+
+/* Class Styles */
+
+.navbar {
+    background-color: var(--clr-one);
+    overflow: hidden;
+}
+
+.navbar a {
+    float: left;
+    color: var(--clr-light);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: var(--fs-subtitle);
+}
+
+.nav-home {
+    background-color: var(--clr-two);
+}
