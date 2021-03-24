@@ -22,9 +22,45 @@
     --clr-dark: rgba(0, 0, 0);
     --clr-one: rgba(40, 40, 40);
     --clr-two: rgba(47, 194, 82);
+    --clr-three: rgba(252, 126, 0);
 }
 
 /* General Styles */
+
+body {
+    font-family: var(--ff-primary);
+}
+
+footer {
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    background-color: var(--clr-one);
+    color: var(--clr-light);
+    padding: 1em;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas: 
+    "hours location menu contact";
+}
+
+footer.hours {
+    grid-area: hours;
+}
+
+footer.location {
+    grid-area: location;
+}
+
+footer.menu {
+    grid-area: menu;
+}
+
+footer.contact {
+    grid-area: contact;
+}
 
 /* Class Styles */
 
@@ -40,8 +76,13 @@
     padding: 14px 16px;
     text-decoration: none;
     font-size: var(--fs-subtitle);
+    transition: all 0.4s ease;
 }
 
 .nav-home {
     background-color: var(--clr-two);
+}
+
+.navbar a:hover {
+    background-color: var(--clr-three);
 }
