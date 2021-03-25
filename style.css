@@ -23,6 +23,8 @@
     --clr-one: rgba(40, 40, 40);
     --clr-two: rgba(47, 194, 82);
     --clr-three: rgba(252, 126, 0);
+
+    --clr-bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.5);
 }
 
 /* General Styles */
@@ -35,7 +37,7 @@ footer {
     bottom: 0;
     left: 0;
     text-align: center;
-    position: fixed;
+    position: relative;
     width: 100%;
     background-color: var(--clr-one);
     color: var(--clr-light);
@@ -63,8 +65,9 @@ footer.contact {
     grid-area: contact;
 }
 
-/* Class Styles */
+                /* Class Styles */
 
+/* Home Page */
 .navbar {
     background-color: var(--clr-one);
     overflow: hidden;
@@ -114,6 +117,7 @@ footer.contact {
 
 .location p {
     padding-top: 1em;
+    font-weight: var(--fw-bold);
 }
 
 .hours p {
@@ -129,4 +133,32 @@ footer.contact {
 
 .contact a:hover {
     color: var(--clr-three);
+}
+
+/* About Page */
+
+.coaches_title {
+    font-size: 4em;
+    text-align: center;
+    margin: 2em;
+    background-color: var(--clr-three);
+    box-shadow: var(--clr-bs);
+    color: var(--clr-light);
+    padding: 5px;
+}
+
+.coaches_wrapper {
+    justify-content: center;
+    align-items: center;
+    margin: 4em;
+}
+
+.profile-img {
+    width: 250px;
+}
+
+.facility h1 {
+    color: var(--clr-light);
+    background: var(--clr-three);
+    box-shadow: var(--clr-bs);
 }
