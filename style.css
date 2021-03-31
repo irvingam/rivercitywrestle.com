@@ -67,6 +67,12 @@ footer.contact {
 
                 /* Class Styles */
 
+/* Misc Class Styles */
+
+.background-wrapper {
+    background-color: var(--clr-one);
+}
+
 /* Home Page */
 .navbar {
     background-color: var(--clr-one);
@@ -215,4 +221,65 @@ footer.contact {
     margin: 2em 5em 2em 5em;
     font-size: 1.5em;
     color: var(--clr-light);
+}
+
+.facility-info_location h2,
+.facility-info_contact h2 {
+    margin: 2em;
+    font-size: var(--fs-subtitle);
+    color: var(--clr-light);
+    background-color: var(--clr-three);
+    padding: 10px 15px 10px 15px ;
+    box-shadow: var(--clr-bs);
+    width: fit-content;
+    text-align: center;
+}
+
+.facility-info_location p {
+    text-align: center;
+    font-size: 1.5em;
+    padding: 10px;
+    color: var(--clr-light);
+}
+
+.google-location {
+    text-align: center;
+    display: block;
+    margin: auto;
+    padding-bottom: 25px;
+    border: none;
+    max-width: 600px;
+    max-height: 450px;
+    min-width: auto;
+    min-height: auto;
+}
+
+.facility-info_contact {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.facility-info_contact p {
+    color: var(--clr-light);
+    font-size: 1.5em;
+    padding: 25px;
+}
+
+.facility-info_contact h3 {
+    padding: 10px;
+    color: var(--clr-light);
+    font-size: 1.5em;
+    font-weight: var(--fw-bold);
+}
+
+.facility-info_contact a {
+    padding: 15px;
+    color: var(--clr-light);
+    font-size: 2.5em;
+    transition: all 0.4s ease;
+}
+
+.facility-info_contact a:hover {
+    color: var(--clr-three);
 }
