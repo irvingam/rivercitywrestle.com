@@ -145,20 +145,74 @@ footer.contact {
     box-shadow: var(--clr-bs);
     color: var(--clr-light);
     padding: 5px;
+    width: 50%;
 }
 
 .coaches_wrapper {
     justify-content: center;
     align-items: center;
+    background-color: var(--clr-one);
+    background-size: 100px;
+}
+
+.coach-profile {
+    padding: 10px;
     margin: 4em;
+    display: grid;
+    grid-template-columns: 250px auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "image name"
+    "image text";
 }
 
 .profile-img {
     width: 250px;
+    grid-area: image;
+}
+
+.profile-text {
+    grid-area: text;
+    padding: 10px;
+    color: var(--clr-light);
+    font-weight: var(--fw-normal);
+}
+
+.profile-name {
+    grid-area: name;
+    margin: 10px;
+    color: var(--clr-light);
+    background-color: var(--clr-three);
+    width: 12em;
+    align-self: center;
+    padding: 5px 5px 5px 15px;
 }
 
 .facility h1 {
     color: var(--clr-light);
     background: var(--clr-three);
     box-shadow: var(--clr-bs);
+    width: 50%;
+    padding: 10px;
+    margin: 2em;
+    text-align: center;
+    font-size: 4em;
+}
+
+.facility_building {
+    background-color: var(--clr-one);
+    padding: 10px;
+}
+
+.facility_building-imgs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.facility_building-txt {
+    text-align: center;
+    margin: 2em 5em 2em 5em;
+    font-size: 1.5em;
+    color: var(--clr-light);
 }
