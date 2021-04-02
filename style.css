@@ -71,6 +71,7 @@ footer.contact {
 
 .background-wrapper {
     background-color: var(--clr-one);
+    padding: 15px;
 }
 
 /* Home Page */
@@ -282,4 +283,29 @@ footer.contact {
 
 .facility-info_contact a:hover {
     color: var(--clr-three);
+}
+
+/* Memberships */
+
+.membership h1 {
+    font-size: 4em;
+    margin: 2em;
+    color: var(--clr-light);
+    background-color: var(--clr-three);
+    width: fit-content;
+    padding: 15px 25px 15px 25px;
+    box-shadow: var(--clr-bs);
+}
+
+.membership p{
+    color: var(--clr-light);
+    font-size: 1.2em;
+}
+
+.membership h2 {
+    margin: 1em;
+    color: var(--clr-light);
+    background-color: var(--clr-two);
+    width: fit-content;
+    padding: 10px;
 }
