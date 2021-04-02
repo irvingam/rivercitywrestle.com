@@ -23,6 +23,7 @@
     --clr-one: rgba(40, 40, 40);
     --clr-two: rgba(47, 194, 82);
     --clr-three: rgba(252, 126, 0);
+    --clr-four: rgba(58, 59, 60);
 
     --clr-bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.5);
 }
@@ -189,7 +190,7 @@ footer.contact {
     grid-area: name;
     margin: 10px;
     color: var(--clr-light);
-    background-color: var(--clr-three);
+    background-color: var(--clr-two);
     width: 12em;
     align-self: center;
     padding: 5px 5px 5px 15px;
@@ -287,7 +288,7 @@ footer.contact {
 
 /* Memberships */
 
-.membership h1 {
+.membership-title {
     font-size: 4em;
     margin: 2em;
     color: var(--clr-light);
@@ -302,10 +303,51 @@ footer.contact {
     font-size: 1.2em;
 }
 
-.membership h2 {
+.membership-wrapper {
+    background-color: var(--clr-one);
+    padding: 15px;
+}
+
+.membership-wrapper h2 {
     margin: 1em;
     color: var(--clr-light);
     background-color: var(--clr-two);
     width: fit-content;
     padding: 10px;
+}
+
+.membership-wrapper p {
+    color: var(--clr-light);
+    font-size: var(--fs-para);
+}
+
+.membership_payment,
+.membership_cost {
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+.membership_waiver object {
+    width: 500px;
+    height: 550px;
+}
+
+.membership_waiver h2 {
+    margin: 2em;
+    font-size: var(--fs-subtitle);
+    color: var(--clr-light);
+    background-color: var(--clr-three);
+    padding: 10px 15px 10px 15px ;
+    box-shadow: var(--clr-bs);
+    width: fit-content;
+    text-align: center;
+}
+
+.membership_waiver p {
+    width: 1200px;
+    background-color: var(--clr-four);
+    color: var(--clr-light);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
