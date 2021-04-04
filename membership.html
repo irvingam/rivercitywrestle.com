@@ -20,32 +20,53 @@
         <a href="about.html" class="nav-about">About</a>
     </div>
 
-    <div class="membership">
-        <h1>Memberships</h1>
-        <div class="background-wrapper">
+    <h1 class="membership-title">Memberships</h1>
+        <div class="membership-wrapper">
             <div class="membership_cost">
                 <h2>Pricing</h2>
                 <p>Our memberships are paid on a monthly basis. Patrons can select what type of plan they want based on 
-                    how many days they want to come to the gym each week. Our prices are as follows.
+                    how many days they want to come to the gym each week. Our prices are as follows:
                 </p>
-                <p>1 Day/Week: $60</p>
-                <p>2 Days/Week $85</p>
-                <p>3 Days/Week $110</p>
+                <div class="membership_cost-prices">
+                    <p><strong>1 Day/Week</strong>: $60</p>
+                    <p><strong>2 Days/Week</strong>: $85</p>
+                    <p><strong>3 Days/Week</strong>: $110</p>
+                </div>
             </div>
             <div class="membership_payment">
                 <h2>Payment</h2>
                 <p>Payment can be submitted through our PayPal link below.</p>
-                <a href=""><i class="fab fa-cc-paypal"></i></a>
+                <div id="smart-button-container">
+                    <div style="text-align: center;">
+                      <div style="margin-bottom: 1.25rem;">
+                        <p></p>
+                        <select id="item-options" class="price-options">
+                            <option>Select</option>
+                            <option value="1 Day/Week" price="60">1 Day/Week - 60 USD</option>
+                            <option value="2 Days/Week" price="85">2 Days/Week - 85 USD</option>
+                            <option value="3 Days/Week" price="110">3 Days/Week - 110 USD</option></select>
+                        <select style="visibility: hidden" id="quantitySelect"></select>
+                      </div>
+                    <div id="paypal-button-container"></div>
+                    </div>
+                  </div>
+                  <script src="https://www.paypal.com/sdk/js?client-id=sb&currency=USD" data-sdk-integration-source="button-factory"></script>
             </div>
+        </div>
+
             <div class="membership_waiver">
                 <h2>Waivers</h2>
                 <p>Before entering the gym, members will have to have all waiver forms filled out along with a valid ID. 
                     Parental signature will be required if member is a minor. All members will have to current/renewed 
-                    USA wrestling card in order to wrestle. All policies are held to a high standard and there will be given
-                    no exceptions.
+                    USA wrestling card in order to wrestle. All policies are firm and <strong>there will be given
+                    no exceptions.</strong>
                 </p>
+                <div class="waiver-wrapper">
+                    <embed src="/files/waiver-covid.pdf" frameborder="0" width="500px" height="500px"></embed>
+                    <embed src="/files/waiver-liability.pdf" frameborder="0" width="500px" height="500px"></embed>
+                </div>
             </div>
-        </div>
+        
     </div>
 
     <footer>
