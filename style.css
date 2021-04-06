@@ -75,7 +75,6 @@ footer.contact {
     padding: 15px;
 }
 
-/* Home Page */
 .navbar {
     background-color: var(--clr-one);
     overflow: hidden;
@@ -98,6 +97,8 @@ footer.contact {
 .navbar a:hover {
     background-color: var(--clr-three);
 }
+
+/* Home Page */
 
 .home_welcome div {
     position: relative;
@@ -126,16 +127,52 @@ footer.contact {
     border-color: var(--clr-dark);
 }
 
-.home_news h2 {
-    margin: 4em;
+.home_news h1,
+.home_events h1 {
+    margin: 2.5em 4em 2.5em 4em;
     color: var(--clr-light);
     padding: 10px 30px 10px 10px;
     background-color: var(--clr-three);
     width: fit-content;
 }
 
+.home_news h2 {
+    margin: 3em;
+    background-color: var(--clr-two);
+    padding: 10px 30px 10px 10px;
+    width: fit-content;
+}
+
+.home_news h3 {
+    margin: 1em 3em 1em 5em;
+    font-size: 1.75em;
+}
+
+.home_news ul {
+    padding: 15px;
+    margin-left: 4em;
+    font-size: 1.75em;
+}
+
 .home_news p {
-    background-color: ;
+    background-color: var(--clr-one);
+    color: var(--clr-light);
+}
+
+.vawa2020,
+.vacw2019 {
+    background-color: var(--clr-one);
+    color: var(--clr-light);
+    padding: 10px;
+}
+
+.home_events p {
+    background: var(--clr-one);
+    color: var(--clr-light);
+    padding: 10px;
+    text-align: center;
+    font-size: 1.75em;
+    margin-bottom: 2em;
 }
 
 /* Footer */
@@ -431,6 +468,29 @@ footer.contact {
 
 /* Mobile Settings */
 
-@media (min-width: 600px) {
-    
+@media (max-width: 750px) {
+
+    /* Nav Bar */
+
+    .navbar a {
+        font-size: 1.4em;
+    }
+
+    /* Footer */
+
+    footer .location {
+        display: none;
+    }
+
+    footer .contact {
+        display: none;
+    }
+
+    /* Home Page */
+
+
+    /* Membership Page */
+
+
+    /* About Page */
 }
