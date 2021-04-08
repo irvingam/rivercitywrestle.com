@@ -466,6 +466,28 @@ footer.contact {
     box-shadow: var(--clr-bs);
 }
 
+/* Schedule Page */
+
+.schedule_events h1 {
+    font-size: 4em;
+    text-align: center;
+    margin: 2em;
+    background-color: var(--clr-three);
+    box-shadow: var(--clr-bs);
+    color: var(--clr-light);
+    padding: 10px;
+    width: fit-content;
+}
+
+.schedule_events p {
+    text-align: center;
+    font-size: 2em;
+    margin: 4em 2em 4em 2em;
+    color: var(--clr-light);
+    background-color: var(--clr-one);
+    padding: 10px;
+}
+
 /* Mobile Settings */
 
 @media (max-width: 750px) {
@@ -497,8 +519,22 @@ footer.contact {
         float: left;
     }
 
-    /* Membership Page */
+    /* Schedule Page */
 
+    .schedule_events {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .schedule_events h1 {
+        font-size: 2em;
+        margin: 2em;
+        text-align: center;
+    }
+
+    /* Membership Page */
+    
 
     /* About Page */
 
@@ -539,21 +575,21 @@ footer.contact {
         width: 100%;
 }
 
-.facility_building-txt {
-    margin: 1em;
-    font-size: var(--fs-para);
-}
+    .facility_building-txt {
+        margin: 1em;
+        font-size: var(--fs-para);
+    }
 
-.facility_building-imgs {
-    display: flex;
-    flex-direction: column;
-    width: auto;
-}
+    .facility_building-imgs {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+    }
 
-.facility-info_location p {
-    font-size: var(--fs-para);
-}
+    .facility-info_location p {
+        font-size: var(--fs-para);
+    }
 
-.google-location {
-    width: auto;
-}
+    .google-location {
+        width: auto;
+    }
