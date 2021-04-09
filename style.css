@@ -134,6 +134,7 @@ footer.contact {
     padding: 10px 30px 10px 10px;
     background-color: var(--clr-three);
     width: fit-content;
+    box-shadow: var(--clr-bs);
 }
 
 .home_news h2 {
@@ -535,6 +536,19 @@ footer.contact {
 
     /* Membership Page */
     
+    .membership-title {
+        margin: 1em;
+        font-size: 3em;
+    }
+
+    .membership_cost p,
+    .membership_payment p {
+        margin: 1em;
+    }
+
+    .waiver-wrapper embed {
+        width: auto;
+    }
 
     /* About Page */
 

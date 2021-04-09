@@ -1,10 +1,10 @@
-// Selectors
+                        //// Selectors ////
 
 
-// Events
+                        //// Events ////
 
 
-// Functions
+                        //// Functions ////
 
 // PayPal Function
 function initPayPalButton() {
